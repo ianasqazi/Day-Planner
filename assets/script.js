@@ -9,7 +9,6 @@ $(document).ready(function(){
 
 // Creating the Time Blocks when page loads
 
-    // var schedArray = ["9AM","10AM","11AM","12PM","1PM","2PM","3PM","4PM","5PM"];
     var schedArray = ["9","10","11","12","13","14","15","16","17"];
 
     for (var i = 0; i < schedArray.length; i++){
@@ -20,25 +19,23 @@ $(document).ready(function(){
             </div>`);
             }
 
+// Appending AM/PM to Time after creating the elements dynamically
+
     for (i=9; i<=11; i++){
                 // $("#hour"+i).append(" AM");
                 $("#hour"+i).html(i+" AM");
             }
-
     for (i=12; i<=17; i++){
                 // $("#hour"+i).append(" PM");
                 $("#hour"+i).html((i-12)+" PM");
             }
     $("#hour12").html("12 PM");
 
-
-            
-
 // Color Coding according to current time hour9AM
 
     // var currentHour = moment().format('h') ;
-    // var currentHour = moment().hour();
-    var currentHour = 14;
+    var currentHour = moment().hour();
+    // var currentHour = 18;
 
     for (var i = 9; i <= 17; i++){
         if (i == currentHour) {
@@ -51,10 +48,6 @@ $(document).ready(function(){
             $("#"+i).addClass("future");
         } 
     }
-
-    // for (i=9; i<=11; i++){
-    //     $("#hour"+i).append(i+"AM");
-    // }
             
 // Load the values from local Storage if exists to the respective textbox
 
@@ -68,6 +61,5 @@ $(document).ready(function(){
         var boxText = $(this.parentNode.children[1]).val();
         localStorage.setItem($(this).attr("id"), boxText);
       });
-
-
+      
 });
