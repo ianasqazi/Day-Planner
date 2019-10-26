@@ -14,11 +14,25 @@ $(document).ready(function(){
 
     for (var i = 0; i < schedArray.length; i++){
             $('.container').append(`<div class="row time-block" id=block${schedArray[i]}> 
-            <div class="col-2 hour" id=hour${schedArray[i]}> <p>${schedArray[i]}</p> </div>
+            <div class="col-2 hour" id=hour${schedArray[i]}>${schedArray[i]}</div>
             <textarea class="col-8 description" id=${schedArray[i]}></textarea> 
             <button class="col-2 saveBtn i far fa-save" id=btn${schedArray[i]}></i></button> 
             </div>`);
             }
+
+    for (i=9; i<=11; i++){
+                // $("#hour"+i).append(" AM");
+                $("#hour"+i).html(i+" AM");
+            }
+
+    for (i=12; i<=17; i++){
+                // $("#hour"+i).append(" PM");
+                $("#hour"+i).html((i-12)+" PM");
+            }
+    $("#hour12").html("12 PM");
+
+
+            
 
 // Color Coding according to current time hour9AM
 
@@ -36,11 +50,15 @@ $(document).ready(function(){
         else {
             $("#"+i).addClass("future");
         } 
- }
+    }
+
+    // for (i=9; i<=11; i++){
+    //     $("#hour"+i).append(i+"AM");
+    // }
             
 // Load the values from local Storage if exists to the respective textbox
 
-    for (var i = 9; i <= 17; i++){
+    for ( i = 9; i <= 17; i++){
         $("#"+i).val(localStorage.getItem("btn"+i));
     } 
 
