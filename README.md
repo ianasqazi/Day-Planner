@@ -6,9 +6,11 @@ Simple Calendar Application that allows the user to save events for each hour of
 
 ## Preview 
 
-<img src="../Day-Planner/assets/images/Screen-Shot.png"
-     alt="Sample Preview Screenshot"
-     style="float: left; margin-right: 20px;" />
+
+     
+     
+     ![Screen-Shot](../Day-Planner/assets/images/Screen-Shot.png)
+
 
 ## Libraries used 
 
