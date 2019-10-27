@@ -4,6 +4,8 @@ Simple Calendar Application that allows the user to save events for each hour of
 
 ## Assignment 5 : UofT Cooding Bootcamp
 
+The assignment focusses on using libraries like JQuery and Moment to create a simple Day-Planner and save the values in the local storage of your browser.
+
 ## Preview 
      
 ![Screen-Shot](assets/images/Screen-Shot.png)
@@ -19,5 +21,3 @@ Simple Calendar Application that allows the user to save events for each hour of
 * JQuery 
 * Bootstrap
 * Moment.js
-
-
