@@ -1,3 +1,4 @@
+// When document is ready Execute this funtion 
 
 $(document).ready(function(){
 
@@ -35,7 +36,6 @@ $(document).ready(function(){
 
     // var currentHour = moment().format('h') ;
     var currentHour = moment().hour();
-    // var currentHour = 18;
 
     for (var i = 9; i <= 17; i++){
         if (i == currentHour) {
