@@ -9,7 +9,8 @@ Simple Calendar Application that allows the user to save events for each hour of
 
      
      
-     ![Screen-Shot](../Day-Planner/assets/images/Screen-Shot.png)
+![Screen-Shot](../Day-Planner/assets/images/Screen-Shot.png)
+ 
 
 
 ## Libraries used 
